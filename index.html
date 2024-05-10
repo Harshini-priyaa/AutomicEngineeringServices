@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutomicEngineeringServices</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#about" class="logo">
+                <img src="../images/logo.png" alt="AElogo" class="logo">
+            </a>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+            <ul class="menu-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li class="contact"><a href="#contact">Contact Us</a></li>
+                <li id="close-menu-btn" class="material-symbols-outlined">close</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>Driving Innovation, Powering Dreams!</h1>
+            <p>We at Automic Engineering Services make your premier destination in the world of automobile and machine engineering. Explore the forefront of automotive and machinery technology with Automic Engineering Services, where we transform dreams into reality</p>
+        </div>
+        <img src="../images/car3.jpg" alt="car" class="car">
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="us">Why Choose Us?</h2>
+        <p>At Automic Engineering Services, we pride ourselves on driving innovation and powering dreams. With a steadfast commitment to excellence, we have established ourselves as leaders in the automotive and machinery industry. Our passion for engineering excellence and dedication to customer satisfaction set us apart. With years of experience and a team of skilled professionals, we specialize in providing a wide range of services including design, manufacturing, sales of automobiles, and research and development. Our creative designs, meticulous manufacturing processes, and cutting-edge research initiatives ensure that we deliver products of the highest quality to meet the evolving needs of our customers.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="popular-tags">
+            <h2>Popular Services:</h2>
+            <ul class="tags">
+                <li>
+                    <a href="#">Design Services</a>
+                    <img src="../images/lenny-kuhne-jHZ70nRk7Ns-unsplash.jpg" alt="design-service" class="pop-img">
+                    <p>We offer creative designs onto your creativity, Endugle your dream designs with us!</p>
+                </li>
+                <li>
+                    <a href="#">Manufacturing</a>
+                    <img src="../images/manufacture.jpg" alt="manufacture images" class="pop-img">
+                    <p>We manufacture more than 15,000 products a year, done with care!</p>
+                </li>
+                <li>
+                    <a href="#">Sale of Automobiles</a>
+                    <img src="../images/sales.jpg" alt="sales" class="pop-img">
+                    <p>We shine in sales every year, setting a new trend among all the manufactures!</p>
+                </li>
+                <li>
+                    <a href="#">Research and Development</a>
+                    <img src="../images/r and d.jpg" alt="r&d">
+                    <p>We make more researches to make our products as astonishing one!</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer class="contact-footer" id="contact">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Automic Engineering Services</p>
+            <p>123 Street Name, City, Country</p>
+            <p>Email: info@automicengservices.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector("header");
+            const hamburgerBtn = document.querySelector("#hamburger-btn");
+            const closeMenuBtn = document.querySelector("#close-menu-btn");
+            const menuLinks = document.querySelector(".menu-links");
+
+            hamburgerBtn.addEventListener("click", () => {
+                header.classList.toggle("show-mobile-menu");
+            });
+
+            closeMenuBtn.addEventListener("click", () => {
+                header.classList.remove("show-mobile-menu");
+            });
+
+            // Close menu when a link is clicked
+            menuLinks.addEventListener("click", () => {
+                header.classList.remove("show-mobile-menu");
+            });
+        });
+    </script>
+</body>
+</html>
