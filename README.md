@@ -1,1 +1,1 @@
-A simple Automobile Industry based frontend web design 
+A simple Automobile Industry based frontend web page design
